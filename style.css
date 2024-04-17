@@ -1,0 +1,416 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://withjoy.com/assets/public/fonts/gotham/GothamSSm-Book_Web.woff2) format('woff2'),
+        url(https://withjoy.com/assets/public/fonts/gotham/GothamSSm-Book_Web.woff) format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url(https://withjoy.com/assets/public/fonts/gotham/GothamSSm-Medium_Web.woff2) format('woff2'),
+        url(https://withjoy.com/assets/public/fonts/gotham/GothamSSm-Medium_Web.woff) format('woff');
+    font-display: swap;
+}
+
+html {
+    background-color: #f6eb0f
+}
+
+body {
+    background-color: #fff;
+    margin: 0;
+    min-height: 100%;
+    color: #112f41;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+.schedule-info {
+    flex-direction: row;
+    display: flex;
+}
+
+.schedule-info-detail.p {
+    flex-shrink: 0;
+    backface-visibility: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    height: 24px;
+    width: 24px;
+}
+
+.schedule-info-detail {
+    flex: 1 0 auto;
+    width: 50px;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+
+    font-size: 1rem;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    overflow: hidden;
+}
+
+@media(max-width: 767px) {
+    body {
+        line-height: 1.7em
+    }
+}
+
+ul {
+    margin-top: -15px
+}
+
+li {
+    line-height: 1.5em
+}
+
+p::selection {
+    background-color: #eaedf0;
+    color: #364049;
+}
+
+p {
+    display: block;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5em;
+    text-align: justify;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+p.date {
+    font-family: Pompiere;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.25;
+    text-transform: none;
+    letter-spacing: 0em;
+    white-space: pre-wrap;
+    white-space-collapse: preserve;
+    text-wrap: wrap;
+    text-align: center;
+}
+
+p.location {
+    font-family: Pompiere;
+    font-weight: 400;
+    font-size: 1.625rem;
+    text-align: center;
+    line-height: 1.25;
+    text-transform: none;
+    letter-spacing: 0em;
+    margin-top: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: Pompiere;
+    font-weight: 400;
+    letter-spacing: 0em;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    margin-left: 0.24rem;
+    margin-right: 0.24rem;
+    line-height: 1.5em;
+    text-transform: none;
+    text-align: center;
+    word-break: break-word;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.25;
+}
+
+h2 {
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    line-height: 1.35;
+}
+
+header,
+#content {
+    height: 100%
+}
+
+header {
+    width: 60%;
+    height: 100vh;
+    background-size: cover;
+    background-position: 50% 0;
+    background-image: url('images/masia_v.jpg');
+    position: fixed;
+    color: rgba(250, 248, 245, 1);
+}
+
+@media(min-width: 500px) {
+    header {
+        background-image: url('images/masia_h.jpg');
+    }
+}
+
+header > * {
+    background-image: unset;
+}    
+
+
+header h2 {
+    font-family: "Pompiere";
+    font-weight: 400;
+    font-size: 4.5rem;
+    line-height: 1.16;
+    text-transform: none;
+    letter-spacing: 0em;
+}
+
+header h3 {
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    text-align: left;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin-top: 1rem;
+    white-space: pre-wrap;
+}
+
+header .menu {
+    text-align: left
+}
+
+header .menu p {
+    margin-bottom: 0
+}
+
+header .intro {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-right: 20%;
+    /* padding-bottom: 11%; */
+    padding-left: 10%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.306) 13%, rgba(0, 0, 0, 0.227) 26%, rgba(0, 0, 0, 0.165) 37%, rgba(0, 0, 0, 0.114) 48%, rgba(0, 0, 0, 0.07) 59%, rgba(0, 0, 0, 0.043) 68%, rgba(0, 0, 0, 0.024) 77%, rgba(0, 0, 0, 0.008) 85%, rgba(0, 0, 0, 0.004) 92%, rgba(0, 0, 0, 0) 100%);
+    height: 60%;
+    width: 70%;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    bottom: 0px;
+    align-items: flex-start;
+    box-sizing: inherit;
+}
+
+@media(max-width: 500px) {
+    header .intro {
+        padding-right: 10%;
+        width: 80%;
+    }
+}
+
+@media(max-width: 1000px) {
+    header {
+        position: relative;
+        width: 100%;
+        display: block;
+    }
+}
+
+a {
+    line-height: 1.6em
+}
+
+a,
+a:visited,
+a:link {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+    border-bottom: #8494a4 1px dashed;
+    padding-bottom: 1px;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s
+}
+
+a svg,
+a:visited svg,
+a:link svg {
+    fill: inherit;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s
+}
+
+a:hover,
+a:focus,
+a:active {
+    color: #fd3519;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: #8494a4 1px dashed;
+    padding-bottom: 1px
+}
+
+a:hover svg,
+a:focus svg,
+a:active svg {
+    fill: #fd3519
+}
+
+.content-wrapper {
+    position: static;
+    width: 40%;
+    margin-left: 60%;
+    float: none;
+    clear: none;
+    display: block;
+    min-height: 88vh;
+}
+
+@media(max-width: 1000px) {
+    .content-wrapper {
+        position: relative;
+        width: 100%;
+        margin-left: 0
+    }
+}
+
+.content {
+    margin: 64px;
+}
+
+.event-info {
+    height: 100vh;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    padding-right: 15%;
+    padding-left: 15%;
+    overflow-y: hidden;
+    color: rgba(51, 51, 51, 1);
+    background-color: rgba(250, 248, 245, 1);
+}
+
+.active {
+    font-weight: 500
+}
+
+header .icon {
+    fill: #fff;
+    margin-right: 10px
+}
+
+.page-container {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 64px;
+}
+
+.page-box {
+    padding-right: 7%;
+    padding-left: 7%;
+}
+
+
+.main-background {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    pointer-events: none;
+}
+
+.main-background>*:first-child {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-image: url('https://withjoy.dexecure.net/assets/public/styles/prod/vineyard_vignette/03ae591f81f3fe41351249cebaeade1325e942af850bbc6625dfe92ae2e5678c@1x');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.bottom-background {
+    left: 50%;
+    width: 100%;
+    bottom: 0;
+    height: auto;
+    position: absolute;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.bottom-background>*:first-child {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url('images/campo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+}
+
+.bottom-background::after {
+    width: 0;
+    content: ' ';
+    display: block;
+    padding-top: 54.72826086956522%;
+}
+
+.icon-background {
+    top: 0;
+    left: 50%;
+    width: 104px;
+    height: 99.9585px;
+    position: absolute;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+.icon-background>*:first-child {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: contain;
+    background-image: url('https://withjoy.dexecure.net/assets/public/styles/prod/vineyard_vignette/2cc991f257f29f7e05c979a36702e70cc73e1b40368be1c42e9d38dcb9c82e51@1x');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 200,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
+}
