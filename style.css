@@ -138,6 +138,9 @@ h2 {
     line-height: 1.35;
 }
 
+h3 {
+    font-size: 1.65rem;
+}
 header,
 #content {
     height: 100%
@@ -161,7 +164,7 @@ header {
 
 header > * {
     background-image: unset;
-}    
+}
 
 
 header h2 {
